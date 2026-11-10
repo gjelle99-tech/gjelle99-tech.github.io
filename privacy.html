@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="icon" href="icon-192.png">
+<title>Tile Slide Privacy Policy</title>
+<meta name="description" content="Privacy policy for the Tile Slide sliding puzzle app by Jelle Gijsbers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@400;600;700;800&display=swap">
+<style>
+/* Layout: blue Tile Slide band with the title, then one calm reading column; one card for the summary, a table for ad data */
+:root{
+  --bg:#F3F7FC; --paper:#FFFFFF; --ink:#1B1446; --muted:#4A5878; --line:#D5E0EF;
+  --band:#1B5FA8; --band-ink:#FFFFFF; --accent:#1B5FA8; --sun:#FFD23F;
+  --f-display:"Lilita One","Arial Rounded MT Bold",system-ui,sans-serif;
+  --f-body:"Nunito",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0D1730; --paper:#14213F; --ink:#E9EEF8; --muted:#A9B6D3; --line:#2A3A62;
+  --band:#134A86; --band-ink:#FFFFFF; --accent:#8CC3FF; --sun:#FFD23F; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0D1730; --paper:#14213F; --ink:#E9EEF8; --muted:#A9B6D3; --line:#2A3A62;
+  --band:#134A86; --band-ink:#FFFFFF; --accent:#8CC3FF; --sun:#FFD23F; color-scheme:dark}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16.5px;line-height:1.65}
+.wrap{max-width:46rem;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+/* Kop */
+.band{background:var(--band);color:var(--band-ink)}
+.band .wrap{padding-block:28px 26px;display:flex;flex-direction:column;gap:10px}
+.app{font-family:var(--f-display);font-size:1.15rem;letter-spacing:.03em;color:var(--sun);margin:0}
+h1{font-family:var(--f-display);font-weight:400;font-size:clamp(2rem,6.5vw,2.8rem);line-height:1.05;margin:0;text-wrap:balance}
+.meta{margin:0;font-size:.95rem;opacity:.9}
+.meta b{font-weight:800}
+.lang{display:flex;gap:6px;margin-top:6px}
+.lang a{color:var(--band-ink);text-decoration:none;font-weight:800;font-size:.9rem;padding:6px 14px;border-radius:999px;border:2px solid rgba(255,255,255,.45)}
+.lang a[aria-current="true"]{background:var(--band-ink);color:var(--band);border-color:var(--band-ink)}
+.lang a:focus-visible,.copy:focus-visible,main a:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+
+/* Inhoud */
+main .wrap{padding-block:28px 56px;display:flex;flex-direction:column;gap:26px}
+section{display:flex;flex-direction:column;gap:8px}
+h2{font-family:var(--f-display);font-weight:400;font-size:1.45rem;line-height:1.2;margin:0;color:var(--accent);text-wrap:balance;letter-spacing:.01em}
+p,ul{margin:0;max-width:65ch}
+ul{padding-left:1.2em;display:flex;flex-direction:column;gap:4px}
+main a{color:var(--accent);font-weight:700;text-underline-offset:3px}
+.summary{background:var(--paper);border:2px solid var(--line);border-radius:18px;padding:18px 20px}
+.summary ul{list-style:none;padding:0;gap:10px}
+.summary li{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:start}
+.summary li::before{content:"";width:14px;height:14px;margin-top:6px;border-radius:4px;background:var(--sun);border:2px solid var(--ink)}
+.tablebox{overflow-x:auto;border:2px solid var(--line);border-radius:14px;background:var(--paper)}
+table{border-collapse:collapse;width:100%;min-width:480px;font-size:.95rem}
+th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:800}
+tr:last-child td{border-bottom:0}
+.contact{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.email{font-weight:800;font-size:1.05rem;user-select:all;overflow-wrap:anywhere}
+.copy{font:800 .85rem var(--f-body);padding:7px 14px;border-radius:999px;border:2px solid var(--ink);background:var(--sun);color:#1B1446;cursor:pointer}
+.small{font-size:.9rem;color:var(--muted)}
+</style>
+</head>
+<body>
+
+<header class="band">
+  <div class="wrap">
+    <p class="app">Tile Slide</p>
+    <h1 data-en="Privacy Policy" data-nl="Privacybeleid">Privacy Policy</h1>
+    <p class="meta"><span data-en="Effective date:" data-nl="Ingangsdatum:">Effective date:</span> <b data-en="10 November 2026" data-nl="10 november 2026">10 November 2026</b> · <span data-en="Developer:" data-nl="Ontwikkelaar:">Developer:</span> <b>Jelle Gijsbers</b></p>
+    <nav class="lang" aria-label="Language">
+      <a href="#en" id="lang-en" lang="en">English</a>
+      <a href="#nl" id="lang-nl" lang="nl">Nederlands</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- ENGLISH -->
+  <div class="wrap" id="en" lang="en">
+    <section class="summary" aria-labelledby="en-sum">
+      <h2 id="en-sum">At a glance</h2>
+      <ul>
+        <li><span>You don't need an account. The app never asks for your name, email address or location.</span></li>
+        <li><span>Your game progress is saved only on your own device.</span></li>
+        <li><span>The app shows ads from Google AdMob. Google collects some device data to show and measure those ads.</span></li>
+        <li><span>In the EU, the UK and Switzerland you decide whether ads may be personalised, and you can change that at any time.</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>1. Who we are</h2>
+      <p>Tile Slide is a sliding puzzle game for Android, made by Jelle Gijsbers, an independent developer based in the Netherlands. In this policy, "we" and "us" mean the developer. This policy explains what information the app uses, why, and what choices you have.</p>
+    </section>
+
+    <section>
+      <h2>2. Information stored on your device</h2>
+      <p>To let you continue where you left off, the app saves the following on your phone:</p>
+      <ul>
+        <li>which levels you have completed and how many stars you earned;</li>
+        <li>your coins and power-ups, and how many free-coin videos you watched today;</li>
+        <li>your settings, such as sound on or off.</li>
+      </ul>
+      <p>This information stays on your device and is never sent to us. Uninstalling the app or clearing its data in Android settings deletes it.</p>
+    </section>
+
+    <section>
+      <h2>3. Advertising by Google AdMob</h2>
+      <p>Tile Slide is free and is paid for by ads: a banner at the bottom of the screen, a full-screen ad between some levels, and optional videos you can choose to watch for free coins. The ads are provided by Google AdMob, a service of Google Ireland Limited and Google LLC. To show ads, measure how they perform and prevent fraud, Google may collect:</p>
+      <div class="tablebox">
+        <table>
+          <thead><tr><th>Information</th><th>Example</th></tr></thead>
+          <tbody>
+            <tr><td>Advertising ID</td><td>A resettable ID that Android provides for ads</td></tr>
+            <tr><td>IP address</td><td>Used, among other things, to estimate your country or region</td></tr>
+            <tr><td>Device and app information</td><td>Phone model, Android version, language, app version</td></tr>
+            <tr><td>Ad interactions</td><td>Which ads were shown and whether they were tapped</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Google uses this information under its own privacy policy. Read more in the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> and in <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">how Google uses information from apps that use its services</a>.</p>
+    </section>
+
+    <section>
+      <h2>4. Your choice about personalised ads</h2>
+      <p>If you are in the European Economic Area, the United Kingdom or Switzerland, the app asks for your consent the first time you open it, using Google's consent message. You can choose whether Google may use your information for personalised ads.</p>
+      <p>You can change your choice at any time: open the app and tap <b>Privacy and cookie settings</b> on the title screen. If you do not consent, Google may still show non-personalised or limited ads. These still use some information, for example to limit how often you see the same ad and to prevent fraud.</p>
+      <p>You can also reset or delete your advertising ID in your phone's settings, usually under <b>Settings → Privacy → Ads</b> or <b>Settings → Google → Ads</b>.</p>
+    </section>
+
+    <section>
+      <h2>5. What we do not do</h2>
+      <ul>
+        <li>We have no servers and receive no personal information about you.</li>
+        <li>We do not use analytics or tracking tools of our own.</li>
+        <li>We do not sell your information.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>6. Children</h2>
+      <p>Tile Slide is intended for people aged 13 and older and is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has provided personal information through the app, please contact us and we will help remove it.</p>
+    </section>
+
+    <section>
+      <h2>7. Legal basis (GDPR)</h2>
+      <ul>
+        <li><b>Personalised ads:</b> your consent (Article 6(1)(a) GDPR), which you can withdraw at any time.</li>
+        <li><b>Non-personalised ads and fraud prevention:</b> our legitimate interest in offering the game for free and keeping ads safe (Article 6(1)(f) GDPR).</li>
+        <li><b>Saving your progress on your device:</b> needed to provide the game you asked for.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>8. International transfers and retention</h2>
+      <p>Google may process information outside the European Economic Area, for example in the United States, with the safeguards described in Google's privacy policy. Information stored on your device is kept until you delete the app or its data. Google keeps advertising data according to its own retention periods.</p>
+    </section>
+
+    <section>
+      <h2>9. Your rights</h2>
+      <p>Under the GDPR you have the right to access, correct or delete your personal data, to restrict or object to its use, and to withdraw consent. Because we do not hold personal data about you, requests about advertising data are best sent to Google, but you are always welcome to contact us. You can also file a complaint with your data protection authority. In the Netherlands this is the <a href="https://autoriteitpersoonsgegevens.nl" target="_blank" rel="noopener">Autoriteit Persoonsgegevens</a>.</p>
+    </section>
+
+    <section>
+      <h2>10. Changes to this policy</h2>
+      <p>We may update this policy, for example when the app changes. The date at the top of this page shows when it was last changed.</p>
+    </section>
+
+    <section>
+      <h2>11. Contact</h2>
+      <p>Questions about this policy or your privacy? Email Jelle Gijsbers:</p>
+      <div class="contact"><span class="email" id="email-en">gjelle974@gmail.com</span><button class="copy" type="button" data-copy="email-en" data-done="Copied">Copy</button></div>
+    </section>
+  </div>
+
+  <!-- NEDERLANDS -->
+  <div class="wrap" id="nl" lang="nl" hidden>
+    <section class="summary" aria-labelledby="nl-sum">
+      <h2 id="nl-sum">In het kort</h2>
+      <ul>
+        <li><span>Je hebt geen account nodig. De app vraagt nooit om je naam, e-mailadres of locatie.</span></li>
+        <li><span>Je voortgang in het spel wordt alleen op je eigen apparaat opgeslagen.</span></li>
+        <li><span>De app toont advertenties van Google AdMob. Google verzamelt daarvoor enkele apparaatgegevens.</span></li>
+        <li><span>In de EU, het VK en Zwitserland kies je zelf of advertenties gepersonaliseerd mogen worden, en je kunt die keuze altijd aanpassen.</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>1. Wie wij zijn</h2>
+      <p>Tile Slide is een schuifpuzzelspel voor Android, gemaakt door Jelle Gijsbers, een zelfstandige ontwikkelaar uit Nederland. Met "wij" en "ons" bedoelen we in dit beleid de ontwikkelaar. Dit beleid legt uit welke gegevens de app gebruikt, waarom, en welke keuzes je hebt.</p>
+    </section>
+
+    <section>
+      <h2>2. Gegevens op je apparaat</h2>
+      <p>Zodat je verder kunt waar je gebleven was, slaat de app het volgende op je telefoon op:</p>
+      <ul>
+        <li>welke levels je hebt gehaald en hoeveel sterren je verdiende;</li>
+        <li>je munten en power-ups, en hoeveel video's voor gratis munten je vandaag hebt bekeken;</li>
+        <li>je instellingen, zoals geluid aan of uit.</li>
+      </ul>
+      <p>Deze gegevens blijven op je apparaat en worden nooit naar ons verstuurd. Als je de app verwijdert of de gegevens van de app wist in de Android-instellingen, zijn ze weg.</p>
+    </section>
+
+    <section>
+      <h2>3. Advertenties van Google AdMob</h2>
+      <p>Tile Slide is gratis en wordt betaald met advertenties: een banner onderaan het scherm, een advertentie op het hele scherm tussen sommige levels, en video's die je zelf kunt kiezen om te bekijken voor gratis munten. Die komen van Google AdMob, een dienst van Google Ireland Limited en Google LLC. Om advertenties te tonen, te meten en fraude te voorkomen, kan Google het volgende verzamelen:</p>
+      <div class="tablebox">
+        <table>
+          <thead><tr><th>Gegeven</th><th>Voorbeeld</th></tr></thead>
+          <tbody>
+            <tr><td>Advertentie-ID</td><td>Een ID voor advertenties dat Android aanbiedt en dat je kunt resetten</td></tr>
+            <tr><td>IP-adres</td><td>Onder meer gebruikt om je land of regio in te schatten</td></tr>
+            <tr><td>Apparaat- en app-gegevens</td><td>Telefoonmodel, Android-versie, taal, app-versie</td></tr>
+            <tr><td>Interactie met advertenties</td><td>Welke advertenties werden getoond en of erop getikt werd</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Google gebruikt deze gegevens volgens zijn eigen privacybeleid. Lees meer in het <a href="https://policies.google.com/privacy?hl=nl" target="_blank" rel="noopener">privacybeleid van Google</a> en over <a href="https://policies.google.com/technologies/partner-sites?hl=nl" target="_blank" rel="noopener">hoe Google gegevens gebruikt van apps die zijn diensten gebruiken</a>.</p>
+    </section>
+
+    <section>
+      <h2>4. Jouw keuze over gepersonaliseerde advertenties</h2>
+      <p>Woon je in de Europese Economische Ruimte, het Verenigd Koninkrijk of Zwitserland, dan vraagt de app de eerste keer dat je hem opent om je toestemming, met het toestemmingsvenster van Google. Je kiest zelf of Google je gegevens mag gebruiken voor gepersonaliseerde advertenties.</p>
+      <p>Je kunt je keuze altijd aanpassen: open de app en tik op het titelscherm op <b>Privacy and cookie settings</b>. Geef je geen toestemming, dan kan Google nog steeds niet-gepersonaliseerde of beperkte advertenties tonen. Daarvoor worden nog wel enkele gegevens gebruikt, bijvoorbeeld om te beperken hoe vaak je dezelfde advertentie ziet en om fraude te voorkomen.</p>
+      <p>Je kunt je advertentie-ID ook resetten of verwijderen in de instellingen van je telefoon, meestal onder <b>Instellingen → Privacy → Advertenties</b> of <b>Instellingen → Google → Advertenties</b>.</p>
+    </section>
+
+    <section>
+      <h2>5. Wat wij niet doen</h2>
+      <ul>
+        <li>We hebben geen servers en ontvangen geen persoonsgegevens van je.</li>
+        <li>We gebruiken geen eigen analyse- of volgsoftware.</li>
+        <li>We verkopen je gegevens niet.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>6. Kinderen</h2>
+      <p>Tile Slide is bedoeld voor mensen van 13 jaar en ouder en is niet gericht op kinderen onder de 13. We verzamelen niet bewust persoonsgegevens van kinderen onder de 13. Denk je dat een kind onder de 13 via de app persoonsgegevens heeft gedeeld? Neem dan contact met ons op, dan helpen we die te verwijderen.</p>
+    </section>
+
+    <section>
+      <h2>7. Grondslag (AVG)</h2>
+      <ul>
+        <li><b>Gepersonaliseerde advertenties:</b> jouw toestemming (artikel 6 lid 1 sub a AVG), die je altijd kunt intrekken.</li>
+        <li><b>Niet-gepersonaliseerde advertenties en fraudepreventie:</b> ons gerechtvaardigd belang om het spel gratis aan te bieden en advertenties veilig te houden (artikel 6 lid 1 sub f AVG).</li>
+        <li><b>Je voortgang opslaan op je apparaat:</b> nodig om je het spel te kunnen bieden.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>8. Doorgifte en bewaartermijn</h2>
+      <p>Google kan gegevens buiten de Europese Economische Ruimte verwerken, bijvoorbeeld in de Verenigde Staten, met de waarborgen die in het privacybeleid van Google staan. Gegevens op je apparaat blijven bewaard tot je de app of de app-gegevens verwijdert. Google bewaart advertentiegegevens volgens zijn eigen bewaartermijnen.</p>
+    </section>
+
+    <section>
+      <h2>9. Jouw rechten</h2>
+      <p>Volgens de AVG heb je het recht om je persoonsgegevens in te zien, te laten corrigeren of verwijderen, het gebruik te laten beperken of er bezwaar tegen te maken, en je toestemming in te trekken. Omdat wij geen persoonsgegevens van je hebben, kun je verzoeken over advertentiegegevens het best aan Google richten, maar je mag ons altijd mailen. Je kunt ook een klacht indienen bij de <a href="https://autoriteitpersoonsgegevens.nl" target="_blank" rel="noopener">Autoriteit Persoonsgegevens</a>.</p>
+    </section>
+
+    <section>
+      <h2>10. Wijzigingen</h2>
+      <p>We kunnen dit beleid aanpassen, bijvoorbeeld als de app verandert. De datum bovenaan deze pagina laat zien wanneer het voor het laatst is gewijzigd.</p>
+    </section>
+
+    <section>
+      <h2>11. Contact</h2>
+      <p>Vragen over dit beleid of over je privacy? Mail Jelle Gijsbers:</p>
+      <div class="contact"><span class="email" id="email-nl">gjelle974@gmail.com</span><button class="copy" type="button" data-copy="email-nl" data-done="Gekopieerd">Kopiëren</button></div>
+      <p class="small">De Engelse versie van dit beleid is leidend bij verschillen.</p>
+    </section>
+  </div>
+</main>
+
+<script>
+(function(){
+  var langs=['en','nl'];
+  function show(){
+    var l=(location.hash||'').replace('#','');
+    if(langs.indexOf(l)<0)l='en';
+    langs.forEach(function(x){
+      document.getElementById(x).hidden=(x!==l);
+      document.getElementById('lang-'+x).setAttribute('aria-current',String(x===l));
+    });
+    document.documentElement.lang=l;
+    document.querySelectorAll('[data-en]').forEach(function(el){el.textContent=el.getAttribute('data-'+l)});
+  }
+  window.addEventListener('hashchange',show);show();
+  document.querySelectorAll('.copy').forEach(function(btn){
+    var label=btn.textContent;
+    btn.addEventListener('click',function(){
+      var el=document.getElementById(btn.getAttribute('data-copy')),text=el.textContent;
+      var done=function(){btn.textContent=btn.getAttribute('data-done');setTimeout(function(){btn.textContent=label},1800)};
+      var select=function(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r)};
+      try{navigator.clipboard.writeText(text).then(done,select)}catch(e){select()}
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
